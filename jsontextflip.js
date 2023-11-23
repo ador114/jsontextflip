@@ -67,8 +67,8 @@ function onoffFflipBtns(){
 			} else {
 				arrowRight.classList.remove('arrow-invisible');
 				arrowRight.disabled = false;
-			}
+			};
 
-}
+};
 
 
