@@ -2,14 +2,11 @@ const objSpace = document.querySelector('.obj-space');
 const arrowLeft = document.querySelector('.arrow-left');
 const arrowRight = document.querySelector('.arrow-right');
 
-
 let objDiv = document.createElement('div');
 objDiv.classList.add('obj-div');
 objSpace.appendChild(objDiv);
 
-
 let currentPar = 0;
-
 
 
 document.addEventListener('DOMContentLoaded', () => {
