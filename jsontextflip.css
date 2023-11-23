@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.obj-space {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    margin-right: 16vw;
+    margin-left: 16vw;
+}
+
+.obj-div {
+    display: block;
+    height: 300px;
+    max-width: 320px;
+    min-width: 320px;
+    outline: 2px solid darkgrey;
+    color: black;
+    background-color: #fff;
+    padding: 12px;
+    font-size: 14px;
+    margin: 24px;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.obj-div > * {
+    margin: 12px;
+}
+
+.arrows {
+    position: absolute;
+    display: flex;
+    width: 100vw;
+    min-width: 740px;
+    justify-content: space-between;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 120px;
+    padding-right: 120px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: min-width 4ms;
+}
+
+.arrow-left, .arrow-right {
+    outline: 1px solid red;
+    border-radius: 50%;
+    border: none;
+    background-color: transparent;
+    min-width: 76px;
+    max-width: 76px;
+    height: 76px;
+    opacity: 100%;
+    transition: opacity 4ms;
+}
+
+.arrow-left {
+    padding-right: 4px;
+    transition: all 4ms;
+}
+.arrow-right {
+    padding-left: 4px;
+    transition: all 4ms;
+}
+
+.arrow-invisible {
+    opacity: 30%;
+    transition: opacity 4ms;
+}
+
+@media (max-width: 470px) {
+    .arrows {
+        min-width: 620px;
+        transition: min-width 4ms;
+    }
+    .arrows > * {
+        color: red;
+    }
+    .arrow-left {
+        padding-right: 48px;
+        outline: 1px solid darkgray;
+        transition: all 4ms;
+    }
+    .arrow-right {
+        padding-left: 48px;
+        outline: 1px solid darkgray;
+        transition: all 4ms;
+    }
+}
